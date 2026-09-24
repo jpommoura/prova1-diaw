@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+.topo {
+    background: #1f3a6e;
+    color: #fff;
+    padding: 20px 24px;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.conteudo {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.campo label {
+    font-size: 13px;
+    color: #444;
+}
+
+.filtros input,
+.filtros select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    min-width: 160px;
+}
+
+.filtros button,
+.filtros .limpar {
+    padding: 9px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.filtros button {
+    background: #1f3a6e;
+    color: #fff;
+    border: 1px solid #1f3a6e;
+}
+
+.filtros .limpar {
+    background: #fff;
+    color: #222;
+    border: 1px solid #bbb;
+}
+
+.contagem,
+.vazio {
+    margin: 16px 0;
+    font-size: 15px;
+}
+
+.vazio {
+    font-weight: bold;
+    color: #a33;
+}
+
+.grade-candidatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.foto-candidato {
+    width: 100%;
+    aspect-ratio: 161 / 225;
+    object-fit: cover;
+    display: block;
+}
+
+.info {
+    padding: 8px 10px 12px;
+    font-size: 12px;
+}
+
+.info p {
+    margin: 2px 0;
+}
+
+.nome {
+    margin: 0 0 4px;
+    font-size: 14px;
+    color: #1f3a6e;
+    text-transform: uppercase;
+}
+
+.numero,
+.cargo {
+    font-weight: bold;
+}
+
+.nome-civil {
+    font-style: italic;
+}
